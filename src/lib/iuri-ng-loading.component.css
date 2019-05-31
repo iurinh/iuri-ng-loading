@@ -1,0 +1,87 @@
+.iuri-ng-loading-background {
+    position: fixed;
+    background: rgba(100, 100, 100, 0.3);
+}
+
+.iuri-ng-loading-progress {
+    position: absolute;
+    border-radius: 100%;
+    background-image: linear-gradient(to right, rgb(61, 107, 255), rgb(0, 29, 124));
+    -webkit-background-image: linear-gradient(to right, rgb(61, 107, 255), rgb(0, 29, 124));
+    -moz-background-image: linear-gradient(to right, rgb(61, 107, 255), rgb(0, 29, 124));
+    -ms-background-image: linear-gradient(to right, rgb(61, 107, 255), rgb(0, 29, 124));
+    -o-background-image: linear-gradient(to right, rgb(61, 107, 255), rgb(0, 29, 124));
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    from{
+        transform: rotate(0deg);
+        -webkit-transform: rotate(0deg);
+        -moz-transform: rotate(0deg);
+        -ms-transform: rotate(0deg);
+        -o-transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(360deg);
+        -webkit-transform: rotate(360deg);
+        -moz-transform: rotate(360deg);
+        -ms-transform: rotate(360deg);
+        -o-transform: rotate(360deg);
+    }
+}
+
+.iuri-ng-loading-icon-container {
+    position: absolute;
+    margin: 10%;
+    border-radius: 100%;
+    background-color: rgba(208, 208, 208);
+    -webkit-background-color: rgba(208, 208, 208);
+    -moz-background-color: rgba(208, 208, 208);
+    -ms-background-color: rgba(208, 208, 208);
+    -o-background-color: rgba(208, 208, 208);
+}
+
+@keyframes increase-animation {
+    0%{
+        transform: scale(0.8);
+    }
+    30%{
+        transform: scale(1.1);
+    }
+    60%{
+        transform: scale(0.8);
+    }
+    80%{
+        transform: scale(0.9);
+    }
+    100%{
+        transform: scale(0.8);
+    }
+}
+
+.iuri-ng-loading-icon-simbol {
+    position: absolute;
+    cursor: default;
+    animation: increase-animation 1.5s linear infinite;
+}
+
+.iuri-ng-loading-icon-image {
+    height: 100%;
+    width: 100%;
+}
+
+.iuri-ng-loading-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 1px;
+    height: 1px;
+}
+
+.iuri-ng-loading-expand-border {
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}

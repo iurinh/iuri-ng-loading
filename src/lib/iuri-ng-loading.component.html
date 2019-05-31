@@ -1,0 +1,11 @@
+<div #background class="iuri-ng-loading-background iuri-ng-loading-expand-border">
+  <div class="iuri-ng-loading-container" 
+    [ngStyle]="{'height': getHeight(), 'width': getWidth(), 'margin-top': '-' + getPartialSize(2), 'margin-left': '-' + getPartialSize(2)}">
+  <div class="iuri-ng-loading-progress iuri-ng-loading-expand-border"></div>
+    <div class="iuri-ng-loading-icon-container iuri-ng-loading-expand-border">
+      <div class="iuri-ng-loading-icon-simbol iuri-ng-loading-expand-border">
+        <img *ngIf="image" class="iuri-ng-loading-icon-image" [src]="image">
+      </div>
+    </div>
+  </div>
+</div>

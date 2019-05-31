@@ -1,0 +1,15 @@
+{
+  "name": "iuri-ng-loading",
+  "description": "Modulo Angular para adicionar loading.",
+  "version": "0.0.5",
+  "peerDependencies": {
+    "@angular/common": "^7.2.0",
+    "@angular/core": "^7.2.0"
+  },
+  "license": "MIT",
+  "author": {
+    "name": "Iuri do Nascimento Hidalgo",
+    "email": "iurinh@hotmail.com"
+  },
+  "readmeFilename": "README.md"
+}
